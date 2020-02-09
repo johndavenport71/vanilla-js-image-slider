@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Image Slider Demo</title>
+  <link href="image-slider.css" rel="stylesheet">
+  <script src="image-slider.js"></script>
+</head>
+<body>
+  <h1>JavaScript Image Slider</h1>
+
+  <h2>Photos by:</h2>
+  <ul>
+    <li><a href="https://unsplash.com/@jonflobrant?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Jon Flobrant</a></li>
+    <li><a href="https://unsplash.com/@martinjernberg?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Martin Jernberg</a></li>
+    <li><a href="https://unsplash.com/@jeremybishop?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Jeremy Bishop</a></li>
+    <li><a href="https://unsplash.com/@verycore?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">André Filipe</a></li>
+    <li><a href="https://unsplash.com/@efranciswork?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Emma Francis</a></li>
+    <li><a href="https://unsplash.com/@redcharlie?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Redcharlie</a></li>
+  </ul>
+  <script>
+    const images = [
+      {src: "assets/andre-filipe-unsplash.jpg", alt: "mountains near body of water"},
+      {src: "assets/emma-francis-unsplash.jpg", alt: "glacier near body of water"},
+      {src: "assets/jeremy-bishop-unsplash.jpg", alt: "ice bergs and alp mountains facing calm body of water"},
+      {src: "assets/jon-flobrant-unsplash.jpg", alt: "aerial view photography of white and red concrete house near village"},
+      {src: "assets/martin-jernberg-unsplash.jpg", alt: "rock formation surrounded with water"},
+      {src: "assets/redcharlie-unsplash.jpg", alt: "herd of white and brown donkeys on snow-covered land"},
+    ];
+    sliderInit("h1", images);
+  </script>
+</body>
+</html>

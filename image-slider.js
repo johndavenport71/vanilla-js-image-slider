@@ -71,3 +71,9 @@ function sliderInit(el, images) {
   window.addEventListener('resize', controller.setMaxTranslate);
 
 }
+
+function setAttributes(elem, attr) {
+  for(let key in attr) {
+    elem.setAttribute(key, attr[key]);
+  }
+}
